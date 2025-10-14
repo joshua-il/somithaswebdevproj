@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIRNY Books - Your Gateway to Anime Literature</title>
+    <link rel="stylesheet" href="pro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="SHIRNY Books Logo">
+            <span class="logo-text">SHIRNY Books</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#popular" class="nav-link">Popularity</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search anime books..." class="search-input">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Welcome to <span class="brand-highlight">SHIRNY Books</span></h1>
+                    <p class="hero-subtitle">Your gateway to the most popular and trending anime books!</p>
+                    <p class="hero-description">Discover captivating stories, legendary characters, and immersive worlds that have defined the anime universe</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Anime Books</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Readers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Daily</span>
+                        <span class="stat-label">Updates</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h2>About SHIRNY Books</h2>
+                <p>SHIRNY Books showcases top anime book picks for fans, featuring both popular classics and trending new releases. Explore, discover, and enjoy!</p>
+            </div>
+        </section>
+
+        <section id="popular" class="books-section">
+            <div class="section-header">
+                <h2><i class="fas fa-fire"></i> Popular Anime Books</h2>
+                <p class="section-subtitle">Most beloved series by our community</p>
+            </div>
+            <div class="slider-wrapper">
+                <button class="arrow left-arrow" onclick="scrollSlider('popular-slider', -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-container">
+                    <div class="slider" id="popular-slider"></div>
+                </div>
+                <button class="arrow right-arrow" onclick="scrollSlider('popular-slider', 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <a href="#" class="more-btn" onclick="showAllBooks('popular')">
+                <i class="fas fa-th-large"></i> See all popular books
+            </a>
+        </section>
+
+        <section id="trending" class="books-section">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> Trending Anime Books</h2>
+                <p class="section-subtitle">Currently hot in the anime community</p>
+            </div>
+            <div class="slider-wrapper">
+                <button class="arrow left-arrow" onclick="scrollSlider('trending-slider', -1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-container">
+                    <div class="slider" id="trending-slider"></div>
+                </div>
+                <button class="arrow right-arrow" onclick="scrollSlider('trending-slider', 1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <a href="#" class="more-btn" onclick="showAllBooks('trending')">
+                <i class="fas fa-th-large"></i> See all trending books
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 SHIRNY Books. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pro2.js"></script>
+</body>
+</html>
+
